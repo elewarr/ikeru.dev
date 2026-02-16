@@ -7,8 +7,6 @@ en:
     description: "Personal website and project showcase"
     accessibility:
       skip_text: "Skip to content"
-      help_text: "Accessibility Statement"
-      help_url: "/about/"
     main_cta:
       text: "Contact"
       link: "/contact/"

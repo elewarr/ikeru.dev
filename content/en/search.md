@@ -1,5 +1,6 @@
 ---
 title: "Search"
-description: "Search the site"
-layout: "search"
+description: "Search this site using Pagefind"
 ---
+
+{{< search_form >}}
