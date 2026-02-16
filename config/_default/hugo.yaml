@@ -3,6 +3,7 @@ title: "ikeru.dev"
 baseURL: "https://ikeru.dev/"
 timeZone: "Europe/Warsaw"
 summaryLength: 50
+enableGitInfo: true
 
 contentDir: content/en/
 defaultContentLanguage: en

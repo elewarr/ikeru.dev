@@ -1,0 +1,7 @@
+{{ with .GitInfo }}
+<span class="git-info nowrap">
+  <a href="https://github.com/elewarr/ikeru.dev/commit/{{ .Hash }}" target="_blank" rel="noopener">
+    {{ .Hash.String | truncate 7 "" }}
+  </a>
+</span>
+{{ end }}
