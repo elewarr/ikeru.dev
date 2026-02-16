@@ -3,7 +3,7 @@ title: "Welcome to ikeru.dev"
 showHeader: false
 ---
 
-# Building things that matter
+# Proof-driven. Caffeine-powered. Deadlock-free.
 
 Welcome to **ikeru.dev** — a personal space for projects, ideas, and technical explorations. Here you'll find what I'm working on, what I'm thinking about, and how to get in touch.
 
