@@ -35,19 +35,19 @@ Have a question, idea, or just want to say hello? Send me a message using the fo
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--gray-800);
+  color: var(--fg-color);
 }
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
   width: 100%;
   padding: 12px 16px;
-  border: 1px solid var(--gray-300);
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   font-family: var(--rounded-font-family);
   font-size: 16px;
-  color: var(--text-color);
-  background: var(--white);
+  color: var(--fg-color);
+  background: var(--bg-color);
   transition: border-color 0.2s;
   box-sizing: border-box;
 }
@@ -55,7 +55,7 @@ Have a question, idea, or just want to say hello? Send me a message using the fo
 .contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: var(--primary-700);
+  border-color: var(--primary-400);
 }
 .contact-form textarea {
   resize: vertical;

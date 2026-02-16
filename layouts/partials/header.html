@@ -2,7 +2,7 @@
 {{ with .Site.Params.sticky_header }}
   {{ $extra_header_class = "sticky" }}
 {{ end }}
-<header class="header {{ $extra_header_class }}">
+<header class="header {{ $extra_header_class }}" role="banner">
     <div class="container wrap">
 
         {{ with .Site.Params.logo_on_white }}
@@ -16,7 +16,7 @@
         {{ end }}
         
         {{ with .Site.Menus.main }}
-        <nav class="main-menu">
+        <nav class="main-menu" role="navigation" aria-label="Main navigation">
             <ul class="main-menu__wrapper">
                 {{ range . }}
                 <li class="top-menu-item{{ if .HasChildren }} menu-item-has-children{{ end }}">
@@ -69,6 +69,17 @@
                         <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
+
+                <div class="accessibility-controls">
+                    <button class="font-size-btn" id="font-decrease" type="button" aria-label="Decrease font size" title="Decrease font size">A-</button>
+                    <button class="font-size-btn font-reset-btn" id="font-reset" type="button" aria-label="Reset font size" title="Reset to default">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 3v5h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="font-size-btn" id="font-increase" type="button" aria-label="Increase font size" title="Increase font size">A+</button>
+                </div>
 
                 {{ partial "language-selector.html" $ }}
 
@@ -123,5 +134,45 @@ document.addEventListener('DOMContentLoaded', function() {
       updateIcon();
     }
   });
+
+  const fontIncrease = document.getElementById('font-increase');
+  const fontDecrease = document.getElementById('font-decrease');
+  const fontReset = document.getElementById('font-reset');
+  const fontSizes = ['xsmall', 'small', 'normal', 'large', 'larger', 'xlarge', 'xxlarge', 'huge', 'xhuge'];
+  let currentFontIndex = fontSizes.indexOf(localStorage.getItem('fontSize') || 'normal');
+  if (currentFontIndex === -1) currentFontIndex = 2;
+
+  function applyFontSize() {
+    const sizes = { xsmall: '80%', small: '90%', normal: '100%', large: '110%', larger: '120%', xlarge: '130%', xxlarge: '140%', huge: '150%', xhuge: '160%' };
+    document.documentElement.style.fontSize = sizes[fontSizes[currentFontIndex]];
+    localStorage.setItem('fontSize', fontSizes[currentFontIndex]);
+  }
+
+  applyFontSize();
+
+  if (fontIncrease) {
+    fontIncrease.addEventListener('click', function() {
+      if (currentFontIndex < fontSizes.length - 1) {
+        currentFontIndex++;
+        applyFontSize();
+      }
+    });
+  }
+
+  if (fontDecrease) {
+    fontDecrease.addEventListener('click', function() {
+      if (currentFontIndex > 0) {
+        currentFontIndex--;
+        applyFontSize();
+      }
+    });
+  }
+
+  if (fontReset) {
+    fontReset.addEventListener('click', function() {
+      currentFontIndex = 2;
+      applyFontSize();
+    });
+  }
 });
 </script>
