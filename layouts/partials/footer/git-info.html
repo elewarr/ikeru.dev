@@ -1,7 +1,8 @@
-{{ with .GitInfo }}
+{{ $commit := getenv "HUGO_PARAMS_GIT_COMMIT" }}
+{{ with $commit }}
 <span class="git-info nowrap">
-  <a href="https://github.com/elewarr/ikeru.dev/commit/{{ .Hash }}" target="_blank" rel="noopener">
-    {{ .Hash.String | truncate 7 "" }}
+  <a href="https://github.com/elewarr/ikeru.dev/commit/{{ . }}" target="_blank" rel="noopener" title="Deployed commit">
+    {{ slice . 0 7 }}
   </a>
 </span>
 {{ end }}

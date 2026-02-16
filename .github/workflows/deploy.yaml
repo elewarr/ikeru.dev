@@ -44,6 +44,8 @@ jobs:
 
       - name: Build
         run: hugo --minify --baseURL "https://ikeru.dev/"
+        env:
+          HUGO_PARAMS_GIT_COMMIT: ${{ github.sha }}
 
       - name: Build Pagefind index
         run: npx -y pagefind --site public
