@@ -17,10 +17,10 @@ Explore the projects I'm currently working on — from platforms to open-source 
 [View Projects](/projects/)
 {{< /card >}}
 {{< card >}}
-## Blog
-Thoughts on technology, engineering, and the craft of building software.
+## Research
+Original work in computational geometry and mathematical physics, verified numerically and formally.
 {{< spacer >}}
-[Read the Blog](/blog/)
+[View Research](/research/)
 {{< /card >}}
 {{< card >}}
 ## About
