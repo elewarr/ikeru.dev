@@ -1,0 +1,107 @@
+en:
+  languageName: English
+  weight: 1
+  copyright: "Copyright &copy; {{< current_year >}} ikeru.dev. All Rights Reserved."
+  title: "ikeru.dev"
+  params:
+    description: "Personal website and project showcase"
+    accessibility:
+      skip_text: "Skip to content"
+      help_text: "Accessibility Statement"
+      help_url: "/about/"
+    main_cta:
+      text: "Contact"
+      link: "/contact/"
+    footer_cta:
+      text: "Get in touch"
+      link: "/contact/"
+    github_edit: ""
+  menu:
+    main:
+    # About - simple page link
+    - identifier: "about"
+      name: "About"
+      url: "/about/"
+      weight: 1
+
+    # Projects - dropdown parent
+    - identifier: "projects"
+      name: "Projects"
+      url: "/projects/"
+      weight: 2
+
+    # Project children - alphabetical order
+    - identifier: "project-agentiq"
+      name: "agentiq"
+      url: "/projects/agentiq/"
+      weight: 1
+      post: "A portable, Rust-native AI agent orchestration framework with OS-level sandboxing and YAML-driven configuration."
+      parent: "projects"
+
+    - identifier: "project-cryoring"
+      name: "CryoRing"
+      url: "/projects/cryoring/"
+      weight: 2
+      post: "Distributed LLM inference across your home lab — zero-config discovery, pipeline parallelism, OpenAI-compatible API."
+      parent: "projects"
+
+    - identifier: "project-flash-attention"
+      name: "Flash Attention for Apple Silicon"
+      url: "/projects/flash-attention-metal/"
+      weight: 3
+      post: "A port of Tri Dao's Flash Attention to Apple Silicon via native Metal kernels — drop-in compatible, no CUDA required."
+      parent: "projects"
+
+    - identifier: "project-openbsd"
+      name: "OpenBSD Kernel Drivers"
+      url: "/projects/openbsd-drivers/"
+      weight: 4
+      post: "Security ID, PWM controller, and backlight drivers for Allwinner ARM SoCs — accepted into the official OpenBSD kernel."
+      parent: "projects"
+
+    - identifier: "project-taskfolks"
+      name: "Task Folks"
+      url: "/projects/hive/"
+      weight: 5
+      post: "A multi-agent framework that turns a single idea into a verified, shipped feature — autonomously."
+      parent: "projects"
+
+    # Research - dropdown parent
+    - identifier: "research"
+      name: "Research"
+      url: "/research/"
+      weight: 3
+
+    # Research children - alphabetical order
+    - identifier: "research-dcm"
+      name: "Discrete Causal Model"
+      url: "/research/discrete-causal-model/"
+      weight: 1
+      post: "A discrete matrix-algebraic model of the universe — space as index structure, time as unitary evolution."
+      parent: "research"
+
+    - identifier: "research-oloid"
+      name: "Oloid Geometry"
+      url: "/research/oloid/"
+      weight: 2
+      post: "The generalized oloid — exact closed-form properties for the convex hull of two linked circles."
+      parent: "research"
+
+    - identifier: "research-synchorizon"
+      name: "Synchronization Horizon"
+      url: "/research/synchronization-horizon/"
+      weight: 3
+      post: "Quantum decoherence as a deterministic data-compression artifact from time-averaged measurement."
+      parent: "research"
+
+    # Blog
+    - identifier: "blog"
+      name: "Blog"
+      url: "/blog/"
+      weight: 4
+
+    # Contact
+    - identifier: "contact"
+      name: "Contact"
+      url: "/contact/"
+      weight: 5

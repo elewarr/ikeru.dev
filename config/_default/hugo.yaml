@@ -1,0 +1,20 @@
+theme: "dot-org-hugo-theme"
+title: "ikeru.dev"
+baseURL: "https://ikeru.dev/"
+timeZone: "Europe/Warsaw"
+summaryLength: 50
+
+contentDir: content/en/
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
+privacy:
+  youtube:
+    privacyEnhanced: true
+  vimeo:
+    enableDNT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

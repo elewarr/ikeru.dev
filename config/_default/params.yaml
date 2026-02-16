@@ -1,0 +1,22 @@
+logo_on_white: "/img/logo-header.svg"
+logo_on_black: "/img/logo-w.svg"
+custom_js: []
+custom_css: []
+
+images: ["/img/social-share.png"]
+
+github:
+  repo_url: ""
+  show_edit_link: false
+
+social_links:
+  github: "https://github.com/elewarr"
+  linkedin: ""
+  twitter: "https://x.com/KrystianLew"
+  x: ""
+  mastodon: ""
+  youtube: ""
+  rss: ""
+
+sticky_header: true
+show_search: true
