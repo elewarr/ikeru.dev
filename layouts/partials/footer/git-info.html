@@ -2,7 +2,7 @@
 {{ with $commit }}
 <span class="git-info nowrap">
   <a href="https://github.com/elewarr/ikeru.dev/commit/{{ . }}" target="_blank" rel="noopener" title="Deployed commit">
-    {{ slice . 0 7 }}
+    {{ substr . 0 7 }}
   </a>
 </span>
 {{ end }}
