@@ -1,6 +1,6 @@
 ---
 title: "Research"
-description: "Original research in computational geometry and mathematical physics, with full numerical and formal verification."
+description: "Topic-level notes on the research areas I'm currently working in — dedicated pages are on the way."
 aliases:
   - /research/oloid/
   - /research/discrete-causal-model/
