@@ -69,7 +69,6 @@ Built with Python and Metal Shading Language. GPU compute runs through Apple's M
 
 ## Links
 
-- [GitHub repository](https://github.com/elewarr/flash-attention) (public)
 - [Upstream: Dao-AILab/flash-attention](https://github.com/Dao-AILab/flash-attention)
 - [Flash Attention paper (arXiv:2205.14135)](https://arxiv.org/abs/2205.14135)
 
