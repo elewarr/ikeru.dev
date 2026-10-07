@@ -1,6 +1,8 @@
 ---
 title: "Projects"
 description: "A showcase of projects I'm working on"
+aliases:
+  - /projects/agentiq/
 ---
 
 ## Projects

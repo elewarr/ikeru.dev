@@ -29,13 +29,6 @@ en:
       weight: 2
 
     # Project children - alphabetical order
-    - identifier: "project-agentiq"
-      name: "agentiq"
-      url: "/projects/agentiq/"
-      weight: 1
-      post: "A portable, Rust-native AI agent orchestration framework with OS-level sandboxing and YAML-driven configuration."
-      parent: "projects"
-
     - identifier: "project-cryoring"
       name: "CryoRing"
       url: "/projects/cryoring/"
