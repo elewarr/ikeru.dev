@@ -2,6 +2,7 @@
 public/
 resources/
 .hugo_build.lock
+.lycheecache
 
 # Dependencies
 node_modules/

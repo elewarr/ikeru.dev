@@ -5,12 +5,17 @@
   "scripts": {
     "start": "hugo serve --logLevel info --buildDrafts --buildFuture --ignoreCache --disableFastRender --gc",
     "build": "hugo --minify",
-    "build:pagefind": "hugo --minify && npx -y pagefind --site public"
+    "build:pagefind": "hugo --minify && npx -y pagefind --site public",
+    "validate:site": "hugo --panicOnWarning --printPathWarnings --minify --baseURL https://ikeru.dev/ && npx pagefind --site public && test -f public/pagefind/pagefind.js",
+    "validate": "npm run validate:site && lychee --root-dir ./public --cache --max-cache-age 1d --timeout 30 --retry-wait-time 1 --no-progress --accept '200,204,301,302,308' --exclude-path 'public/contact/' './public/**/*.html'"
   },
   "dependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "sass-embedded": "^1.89.2"
+  },
+  "devDependencies": {
+    "pagefind": "1.5.2"
   }
 }

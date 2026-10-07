@@ -1,0 +1,10 @@
+# Deliberate exclusions per Phase 1 D-02. Add ONLY when a domain is
+# structurally unreachable from CI runners and the cost of skipping is accepted.
+
+# x.com is datacenter-blocked from GitHub Actions runner IPs; the link
+# still appears in the live site footer, but the gate cannot verify it.
+x\.com
+
+# mailto: links have no HTTP semantics; explicit skip avoids surprises
+# if --include-mail is ever enabled.
+mailto:.*
