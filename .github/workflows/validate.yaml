@@ -1,0 +1,77 @@
+# Validation gate: strict Hugo build + Pagefind smoke check + lychee link check.
+# Gates PRs and non-main pushes. The deploy workflow on main is untouched (L-01).
+
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+  workflow_dispatch:
+
+# Least privilege: validation never deploys, so the deploy-only scopes are
+# deliberately absent from this block — contents: read is all it needs.
+permissions:
+  contents: read
+
+# Concurrency isolation (L-01): this group belongs to validate ONLY.
+# NEVER set it to the literal `pages` group — that group belongs exclusively
+# to deploy.yaml; sharing it would let a validation run cancel an in-flight deploy.
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.155.3"
+          extended: true
+
+      - name: Setup Dart Sass
+        run: sudo snap install dart-sass
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate site (strict Hugo + Pagefind smoke)
+        run: npm run validate:site
+        env:
+          HUGO_ENV: production
+          HUGO_PARAMS_GIT_COMMIT: ${{ github.sha }}
+
+      - name: Check links (lychee)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Args mirror the lychee segment of `npm run validate` in package.json —
+          # keep the two in sync (enforced mechanically: Phase-01 Task 1 verify
+          # fails on any mirrored-flag drift between the two surfaces).
+          args: >-
+            --root-dir ./public
+            --cache --max-cache-age 1d
+            --timeout 30 --retry-wait-time 1
+            --no-progress
+            --accept '200,204,301,302,308'
+            --exclude-path 'public/contact/'
+            './public/**/*.html'
+          fail: true
+          # Deterministic binary pin — matches the lychee version proven on the
+          # Phase-01 build mirror.
+          lycheeVersion: v0.24.2
+          token: ${{ secrets.GITHUB_TOKEN }}
