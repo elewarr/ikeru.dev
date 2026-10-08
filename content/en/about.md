@@ -24,7 +24,7 @@ Kernel-level work on OpenBSD, BSP integration at co-processor level, BLE protoco
 {{< /card >}}
 {{< card >}}
 ### AI & Automation
-Currently working with AI/LLM models, building custom multi-agent tooling, and automating complex system workflows.
+Two machine learning models published on Hugging Face: piano transcription and Polish grammar error correction.
 {{< /card >}}
 {{< /cards >}}
 
@@ -64,6 +64,7 @@ Highlights include architecting a prototype AirPlay server for AOSP, implementin
 
 - [GitHub](https://github.com/elewarr)
 - [X (Twitter)](https://x.com/KrystianLew)
+- [Hugging Face](https://huggingface.co/citan)
 
 {{< spacer >}}
 
