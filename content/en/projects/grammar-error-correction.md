@@ -1,12 +1,12 @@
 ---
 title: "Grammar Error Correction"
-description: "Polish grammar error correction model on Hugging Face — corrects grammar token by token, exported in ONNX and safetensors formats."
+description: "Polish grammar error correction model on Hugging Face — proposes corrections token by token, exported in ONNX and safetensors formats."
 weight: 1
 ---
 
 ## Grammar Error Correction
 
-A grammar error correction model for Polish, published on [Hugging Face](https://huggingface.co/citan/plgec-herbert-large-v2). It finds and fixes grammatical errors in Polish text — built as a token-classification pipeline in the GECToR style, on top of a HerBERT base model (allegro/herbert-large-cased).
+A grammar error correction model for Polish, published on [Hugging Face](https://huggingface.co/citan/plgec-herbert-large-v2). It finds grammatical errors in Polish text and proposes corrections — built as a token-classification pipeline in the GECToR style, on top of the HerBERT-large encoder (allegro/herbert-large-cased).
 
 {{< spacer >}}
 

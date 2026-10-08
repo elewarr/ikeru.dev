@@ -10,4 +10,4 @@ aliases:
 
 ## Projects
 
-Here's an overview of the projects I'm currently building and contributing to.
+Here's an overview of the projects on this site, from current machine learning work to kernel drivers merged into the OpenBSD tree. Some earlier projects have come and gone; their old pages redirect here.

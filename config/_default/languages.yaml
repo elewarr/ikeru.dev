@@ -33,7 +33,7 @@ en:
       name: "Grammar Error Correction"
       url: "/projects/grammar-error-correction/"
       weight: 1
-      post: "Polish grammar error correction model on Hugging Face — corrects grammar token by token, exported in ONNX and safetensors formats."
+      post: "Polish grammar error correction model on Hugging Face — proposes corrections token by token, exported in ONNX and safetensors formats."
       parent: "projects"
 
     - identifier: "project-miditizer"

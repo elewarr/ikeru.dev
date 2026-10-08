@@ -9,13 +9,13 @@ aliases:
 
 ## Research
 
-I work in a few areas of machine learning research at the moment. Three that come up most often are Hessian analysis, entropy, and attention heads. The notes below describe each at a high level only — what the area is, and why I'm interested in it.
+I work in three main areas of machine learning research: Hessian analysis, entropy, and attention heads. Some earlier research topics have come and gone as the work shifted; the old pages redirect here. The notes below describe each at a high level only — what the area is, and why I'm interested in it.
 
 {{< spacer >}}
 
 ### Hessian analysis
 
-The Hessian of a model's loss surface carries information about the local geometry of training. I'm interested in what it can tell us about generalization — the structure of the curvature, and how it relates to the model's behaviour on out-of-distribution data.
+The Hessian of a model's loss surface carries information about the local geometry of training. I'm interested in what it can tell us about generalization — the structure of the curvature, and how it relates to the model's behavior on out-of-distribution data.
 
 ### Entropy
 
@@ -27,4 +27,4 @@ The individual heads inside a transformer each learn to attend to different thin
 
 {{< spacer >}}
 
-The page is intentionally short. Detailed writeups belong elsewhere — this is a topic-level summary.
+The page is intentionally short. Detailed write-ups belong elsewhere — this is a topic-level summary.

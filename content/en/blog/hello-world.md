@@ -7,4 +7,4 @@ author: "Krystian"
 
 ## Hello World
 
-This is the first post on **ikeru.dev**. More content coming soon — stay tuned for thoughts on technology, engineering, and the projects I'm building.
+This is the first post on **ikeru.dev**. More will follow once there's something worth writing down.
