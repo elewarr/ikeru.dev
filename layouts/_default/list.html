@@ -2,7 +2,9 @@
 {{ .Content }}
   {{ range .Pages }}
     <article>
-      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <!-- RelPermalink (not .Permalink): root-relative hrefs resolve against any origin,
+         so the lychee gate can verify newly added pages locally before they deploy. -->
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       {{ with .Description }}<p>{{ . }}</p>
       {{ else }}<p>{{ .Summary | plainify }}</p>
       {{ end }}

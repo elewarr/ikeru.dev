@@ -29,6 +29,20 @@ en:
       weight: 2
 
     # Project children - alphabetical order
+    - identifier: "project-grammar-error-correction"
+      name: "Grammar Error Correction"
+      url: "/projects/grammar-error-correction/"
+      weight: 1
+      post: "Polish grammar error correction model on Hugging Face — corrects grammar token by token, exported in ONNX and safetensors formats."
+      parent: "projects"
+
+    - identifier: "project-miditizer"
+      name: "Miditizer"
+      url: "/projects/miditizer/"
+      weight: 2
+      post: "Piano transcription model on Hugging Face — turns raw audio into MIDI notes."
+      parent: "projects"
+
     - identifier: "project-openbsd"
       name: "OpenBSD Kernel Drivers"
       url: "/projects/openbsd-drivers/"

@@ -18,7 +18,7 @@ Explore the projects I'm currently working on — from platforms to open-source 
 {{< /card >}}
 {{< card >}}
 ## Research
-Original work in computational geometry and mathematical physics, verified numerically and formally.
+Three areas I'm currently working in at topic level: Hessian analysis, entropy, and attention heads.
 {{< spacer >}}
 [View Research](/research/)
 {{< /card >}}
