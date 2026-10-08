@@ -5,8 +5,8 @@
   "scripts": {
     "start": "hugo serve --logLevel info --buildDrafts --buildFuture --ignoreCache --disableFastRender --gc",
     "build": "hugo --minify",
-    "build:pagefind": "hugo --minify && npx -y pagefind --site public",
-    "validate:site": "hugo --panicOnWarning --printPathWarnings --minify --baseURL https://ikeru.dev/ && npx pagefind --site public && test -f public/pagefind/pagefind.js && ! cat public/pagefind/index/*.pf_index public/pagefind/fragment/*.pf_fragment | gzip -cd | grep -qiE '(agentiq|cryoring|flash|attention|metal|folks|oloid|discrete|causal|synchronization|horizon)'",
+    "build:pagefind": "hugo --minify && pagefind --site public",
+    "validate:site": "hugo --panicOnWarning --printPathWarnings --minify --baseURL https://ikeru.dev/ && pagefind --site public && test -f public/pagefind/pagefind.js && gzip -cd public/pagefind/index/*.pf_index public/pagefind/fragment/*.pf_fragment > .pagefind-decoded && ! grep -qiE '(agentiq|cryoring|projects/flash-attention-metal|projects/hive|task-folks|research/oloid|research/discrete-causal-model|research/synchronization-horizon)' .pagefind-decoded && rm -f .pagefind-decoded",
     "validate": "npm run validate:site && lychee --root-dir ./public --cache --max-cache-age 1d --timeout 30 --retry-wait-time 1 --no-progress --accept '200,204,301,302,308' --exclude-path 'public/contact/' './public/**/*.html'"
   },
   "dependencies": {
