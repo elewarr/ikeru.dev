@@ -5,14 +5,14 @@ showHeader: false
 
 # Proof-driven. Caffeine-powered. Deadlock-free.
 
-Welcome to **ikeru.dev** — a personal space for projects, ideas, and technical explorations. Here you'll find what I'm working on, what I'm thinking about, and how to get in touch.
+Welcome to **ikeru.dev**, my personal space for the things I build and the ideas behind them. Here you'll find what I'm working on and how to get in touch.
 
 {{< spacer >}}
 
 {{< cards count=3 >}}
 {{< card >}}
 ## Projects
-Explore the projects I'm currently working on — from platforms to open-source tools.
+Explore what I'm currently building, from machine learning models to OpenBSD kernel drivers.
 {{< spacer >}}
 [View Projects](/projects/)
 {{< /card >}}
