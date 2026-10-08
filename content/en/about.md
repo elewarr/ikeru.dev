@@ -23,7 +23,7 @@ Years of work on Android (AOSP, wearOS, JNI, HALs, BSPs) and Apple platforms (iO
 Kernel-level work on OpenBSD, BSP integration at coprocessor level, BLE protocols, LoRaWAN for IoT, and security features including Passkey for AOSP.
 {{< /card >}}
 {{< card >}}
-### AI & Automation
+### Machine Learning
 Two machine learning models published on Hugging Face: piano transcription and Polish grammar error correction.
 {{< /card >}}
 {{< /cards >}}

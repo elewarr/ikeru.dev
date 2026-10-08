@@ -12,7 +12,7 @@ Welcome to **ikeru.dev**, my personal space for the things I build and the ideas
 {{< cards count=3 >}}
 {{< card >}}
 ## Projects
-Explore what I'm currently building, from machine learning models to OpenBSD kernel drivers.
+Explore what I'm building, from machine learning models to OpenBSD kernel drivers.
 {{< spacer >}}
 [View Projects](/projects/)
 {{< /card >}}

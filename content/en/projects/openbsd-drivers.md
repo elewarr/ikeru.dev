@@ -6,7 +6,7 @@ weight: 4
 
 ## OpenBSD Kernel Drivers
 
-A set of kernel drivers for Allwinner ARM system-on-chip platforms, accepted into the official [OpenBSD](https://www.openbsd.org/) source tree. These drivers target the ARM-based SoCs commonly found in single-board computers like Pine64 and Orange Pi, enabling hardware support for PWM, display backlight control, and chip identification.
+A set of kernel drivers for Allwinner ARM system-on-chip platforms, accepted into the official [OpenBSD](https://www.openbsd.org/) source tree. These drivers target the ARM-based SoCs commonly found in single-board computers like Pine64 and Orange Pi, enabling hardware support for chip identification across the SoC family, and PWM and display backlight control on A13/A64-class boards.
 
 All drivers use the Flattened Device Tree (FDT) framework for hardware description and follow OpenBSD's kernel coding conventions.
 
@@ -27,7 +27,7 @@ Reads factory-programmed unique chip identification data from Allwinner SoC non-
 ### sxipwm
 **PWM Controller**
 
-Driver for the Allwinner sun5i-a13 Pulse Width Modulation controller. Manages PWM channels with configurable prescalers, period, and duty cycle — the low-level hardware interface that other subsystems (like backlight control) build on.
+Driver for the Allwinner sun5i-a13 Pulse Width Modulation controller. Manages the PWM channel with configurable prescalers, period, and duty cycle — the low-level hardware interface that other subsystems (like backlight control) build on.
 
 [View source](https://github.com/openbsd/src/blob/master/sys/dev/fdt/sxipwm.c)
 {{< /card >}}
@@ -50,4 +50,4 @@ Controls LCD and display backlight brightness via PWM signals. Supports brightne
 - **Language:** C, following OpenBSD kernel style
 - **License:** ISC (standard OpenBSD license)
 
-The drivers work together as a stack: **sxisid** handles chip identification and entropy seeding, **sxipwm** provides the PWM hardware interface, and **pwmbl** uses it to control display brightness — all essential pieces for running OpenBSD on Allwinner-based ARM boards.
+The drivers have distinct roles: **sxisid** handles chip identification and entropy seeding, **sxipwm** provides the PWM hardware interface, and **pwmbl** uses it to control display brightness — the stack behind OpenBSD display backlight support on Allwinner-based ARM boards.
