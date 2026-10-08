@@ -5,9 +5,9 @@ description: "Krystian Lewandowski — software developer, technical leader, and
 
 ## About Me
 
-I'm Krystian Lewandowski — a software developer with over 20 years of commercial experience, specializing in system-level and cross-platform development. I work across mobile ecosystems, embedded platforms, and kernel-level systems, and I enjoy driving complex projects from architecture through to full delivery.
+I'm Krystian Lewandowski — a software developer with over 20 years of commercial experience, most of it system-level and cross-platform work: mobile platforms like Android, embedded systems, kernel code. I like taking a complex project from early architecture through to delivery.
 
-Throughout my career I've had the privilege of working on a wide range of cutting-edge projects for major technology and mobile service providers — from building an AirPlay server prototype on Android, to contributing kernel drivers accepted into the official OpenBSD tree, to designing secure payment encoding libraries for custom hardware.
+Most of it has been for major technology and mobile service providers: an AirPlay server prototype on Android, kernel drivers accepted into the official OpenBSD tree, secure payment encoding libraries for custom hardware.
 
 {{< spacer >}}
 
@@ -16,11 +16,11 @@ Throughout my career I've had the privilege of working on a wide range of cuttin
 {{< cards count=3 >}}
 {{< card >}}
 ### Mobile & Embedded
-Deep experience in Android (AOSP, wearOS, JNI, HALs, BSPs) and Apple platforms (iOS, macOS, tvOS). From system services to user-facing applications.
+Years of work on Android (AOSP, wearOS, JNI, HALs, BSPs) and Apple platforms (iOS, macOS, tvOS). From system services to user-facing applications.
 {{< /card >}}
 {{< card >}}
 ### Systems & Security
-Kernel-level work on OpenBSD, BSP integration at co-processor level, BLE protocols, LoRaWAN for IoT, and security features including Passkey for AOSP.
+Kernel-level work on OpenBSD, BSP integration at coprocessor level, BLE protocols, LoRaWAN for IoT, and security features including Passkey for AOSP.
 {{< /card >}}
 {{< card >}}
 ### AI & Automation
@@ -32,15 +32,15 @@ Two machine learning models published on Hugging Face: piano transcription and P
 
 ## Experience
 
-**2008 — Present: Mobica / Cognizant** — Developer to Principal Consultant
+**2008 – Present: Mobica / Cognizant** — Developer to Principal Consultant
 
 Progressed through various technical roles, leading and contributing to projects spanning mobile platforms, multimedia and connectivity, system security, and cross-platform core development. Served as Tech Lead across multiple engagements, managing entire delivery processes including development, testing, and CI/CD.
 
 Highlights include architecting a prototype AirPlay server for AOSP, implementing streaming solutions with ONVIF/RTSP, maintaining cross-platform SDKs across Android, iOS, Windows, and Linux, and leading integration of a rich SVG rendering solution supporting all major 32/64-bit platforms.
 
-**2005 — 2008: Siemens / Nokia Siemens Networks** — Software Engineer / Technical Lead
+**2005 – 2008: Siemens / Nokia Siemens Networks** — Software Engineer / Technical Lead
 
-**2001 — 2005: Municipal Culture Centre** — IT / Instructor. Established a local Linux Users Group.
+**2001 – 2005: Municipal Culture Centre** — IT / Instructor. Established a local Linux Users Group.
 
 {{< spacer >}}
 
