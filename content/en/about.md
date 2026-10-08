@@ -7,7 +7,7 @@ description: "Krystian Lewandowski — software developer, technical leader, and
 
 I'm Krystian Lewandowski — a software developer with over 20 years of commercial experience, most of it system-level and cross-platform work: mobile platforms like Android, embedded systems, kernel code. I like taking a complex project from early architecture through to delivery.
 
-Most of it has been for major technology and mobile service providers: an AirPlay server prototype on Android, kernel drivers accepted into the official OpenBSD tree, secure payment encoding libraries for custom hardware.
+The bulk of that work has been for major technology and mobile service providers: an AirPlay server prototype on Android, kernel drivers accepted into the official OpenBSD tree, secure payment encoding libraries for custom hardware.
 
 {{< spacer >}}
 
