@@ -16,7 +16,7 @@ Most of it has been for major technology and mobile service providers: an AirPla
 {{< cards count=3 >}}
 {{< card >}}
 ### Mobile & Embedded
-Years of work on Android (AOSP, wearOS, JNI, HALs, BSPs) and Apple platforms (iOS, macOS, tvOS). From system services to user-facing applications.
+Years of work on Android (AOSP, Wear OS, JNI, HALs, BSPs) and Apple platforms (iOS, macOS, tvOS). From system services to user-facing applications.
 {{< /card >}}
 {{< card >}}
 ### Systems & Security
