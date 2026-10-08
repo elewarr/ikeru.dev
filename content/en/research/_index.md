@@ -15,7 +15,7 @@ I work in a few areas of machine learning research at the moment. Three that com
 
 ### Hessian analysis
 
-The Hessian of a model's loss surface carries information about the local geometry of training. I'm interested in what it can tell us about generalization — the structure of the curvature, and how it relates to the model's behaviour on out-of-distribution data.
+The Hessian of a model's loss surface carries information about the local geometry of training. I'm interested in what it can tell us about generalization — the structure of the curvature, and how it relates to the model's behavior on out-of-distribution data.
 
 ### Entropy
 
@@ -27,4 +27,4 @@ The individual heads inside a transformer each learn to attend to different thin
 
 {{< spacer >}}
 
-The page is intentionally short. Detailed writeups belong elsewhere — this is a topic-level summary.
+The page is intentionally short. Detailed write-ups belong elsewhere — this is a topic-level summary.

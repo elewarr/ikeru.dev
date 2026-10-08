@@ -15,7 +15,7 @@ The current projects are two machine learning models published on Hugging Face: 
 
 {{< spacer >}}
 
-Research continues at the area level only: Hessian analysis, entropy, and attention heads. The research page describes each topic in a few sentences; there are no deeper writeups here.
+Research continues at the area level only: Hessian analysis, entropy, and attention heads. The research page describes each topic in a few sentences; there are no deeper write-ups here.
 
 {{< spacer >}}
 
