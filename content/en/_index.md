@@ -1,5 +1,6 @@
 ---
 title: "Welcome to ikeru.dev"
+description: "Krystian Lewandowski's personal site: the projects I'm building and the ideas behind them, from machine learning research to OpenBSD kernel drivers."
 showHeader: false
 ---
 
