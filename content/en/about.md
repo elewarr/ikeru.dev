@@ -46,8 +46,8 @@ Highlights include architecting a prototype AirPlay server for AOSP, implementin
 
 ## Education
 
-- **MSc Computer Science** — University of Lodz, 2005
-- **BSc Computer Science** — University of Lodz, 2003
+- **MSc Computer Science** — University of Łódź, 2005
+- **BSc Computer Science** — University of Łódź, 2003
 - Prime Minister's Scholarship recipient
 
 {{< spacer >}}
