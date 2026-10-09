@@ -2,7 +2,7 @@
 title: "Where Things Stand"
 date: 2026-10-08
 description: "A short note on what the site holds right now — current projects, research areas, and nothing else."
-author: "Krystian"
+author: krystian
 ---
 
 ## Where Things Stand
