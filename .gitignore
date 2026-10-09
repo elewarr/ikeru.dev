@@ -27,4 +27,5 @@ Thumbs.db
 .planning/
 .gsd/
 **/AGENTS.md
+.playwright-mcp/
 

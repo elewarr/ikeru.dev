@@ -2,7 +2,7 @@
 title: "Hello World"
 date: 2026-02-15
 description: "The first post on ikeru.dev — a brief introduction."
-author: "Krystian"
+author: krystian
 ---
 
 ## Hello World
